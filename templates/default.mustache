@@ -3,7 +3,7 @@
 # Inspired by base16-shell (https://github.com/chriskempson/base16-shell)
 # {{scheme-name}} scheme by {{scheme-author}}
 
-function base16-universal-default -d "base16 {{scheme-name}} theme"
+function base16-universal-default-theme -d "base16 {{scheme-name}} theme"
     set options (fish_opt --short=t --long=test)
     argparse $options -- $argv
 
@@ -124,3 +124,5 @@ function base16-universal-default -d "base16 {{scheme-name}} theme"
         __base16_fish_shell_color_test $base16_colors_hex
     end
 end
+
+base16-universal-default-theme
